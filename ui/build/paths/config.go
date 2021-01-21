@@ -101,6 +101,9 @@ var Configuration = map[string]PathConfig{
 	"zcat":    Allowed,
 	"zip":     Allowed,
 
+	// clang-12
+	"clang-12":    Allowed,
+
 	// Allow prebuilts/gcc/ compilation chain
 	"aarch64-linux-android-addr2line":    Allowed,
 	"aarch64-linux-android-ar":           Allowed,
@@ -133,7 +136,7 @@ var Configuration = map[string]PathConfig{
 	"arm-linux-androideabi-cpp":          Allowed,
 	"arm-linux-androideabi-dwp":          Allowed,
 	"arm-linux-androideabi-elfedit":      Allowed,
-        "arm-linux-androideabi-gcc":          Allowed,
+	"arm-linux-androideabi-gcc":          Allowed,
 	"arm-linux-androideabi-gcc-ar":       Allowed,
 	"arm-linux-androideabi-gcc-nm":       Allowed,
 	"arm-linux-androideabi-gcc-ranlib":   Allowed,
@@ -151,6 +154,31 @@ var Configuration = map[string]PathConfig{
 	"arm-linux-androideabi-size":         Allowed,
 	"arm-linux-androideabi-strings":      Allowed,
 	"arm-linux-androideabi-strip":        Allowed,
+	"arm-linux-androidkernel-addr2line":    Allowed,
+	"arm-linux-androidkernel-ar":           Allowed,
+	"arm-linux-androidkernel-as":           Allowed,
+	"arm-linux-androidkernel-c++filt":      Allowed,
+	"arm-linux-androidkernel-cpp":          Allowed,
+	"arm-linux-androidkernel-dwp":          Allowed,
+	"arm-linux-androidkernel-elfedit":      Allowed,
+	"arm-linux-androidkernel-gcc":          Allowed,
+	"arm-linux-androidkernel-gcc-ar":       Allowed,
+	"arm-linux-androidkernel-gcc-nm":       Allowed,
+	"arm-linux-androidkernel-gcc-ranlib":   Allowed,
+	"arm-linux-androidkernel-gcov":         Allowed,
+	"arm-linux-androidkernel-gcov-tool":    Allowed,
+	"arm-linux-androidkernel-gprof":        Allowed,
+	"arm-linux-androidkernel-ld":           Allowed,
+	"arm-linux-androidkernel-ld.bfd":       Allowed,
+	"arm-linux-androidkernel-ld.gold":      Allowed,
+	"arm-linux-androidkernel-nm":           Allowed,
+	"arm-linux-androidkernel-objcopy":      Allowed,
+	"arm-linux-androidkernel-objdump":      Allowed,
+	"arm-linux-androidkernel-ranlib":       Allowed,
+	"arm-linux-androidkernel-readelf":      Allowed,
+	"arm-linux-androidkernel-size":         Allowed,
+	"arm-linux-androidkernel-strings":      Allowed,
+	"arm-linux-androidkernel-strip":        Allowed,
 
 	// Host toolchain is removed. In-tree toolchain should be used instead.
 	// GCC also can't find cc1 with this implementation.
